@@ -87,4 +87,11 @@ $sport = "<p>https://www.pakmen.com/the-history-of-volleyball/
 <p>https://www.pakmen.com/the-difference-between-beach-and-indoor-volleyball/
 <p>https://precisionstriking.com/beginner-boxing-tips/";
 
+$ppc = "<p>https://ariacal.com/ppc-blog/how-effective-is-ppc-advertising/
+<p>https://ariacal.com/ppc-blog/how-to-get-started-with-ppc/
+<p>https://ariacal.com/ppc-blog/how-to-do-ppc-for-a-website/
+<p>https://ariacal.com/ppc-blog/how-to-find-the-right-keywords-for-ppc-campaign/
+<p>https://ariacal.com/ppc-blog/how-to-get-more-sales-with-ppc/
+<p>https://ariacal.com/ppc-blog/is-ppc-marketing-worth-it/";
+
 ?>
