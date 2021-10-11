@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Content Writer's Email Creation Tool</title>
+    <meta charset='utf-8'>
+</head>
+<body>
+    <form action='form.php' method='post'>
+        
+        Do you know client's name?(Yes/No)? If Yes, what's client name?<br>
+        <textarea cols='50' rows='1' name='msg-client'></textarea><br>
+
+        Do you have writing samples?(Yes/No)?<br>
+        <textarea cols='50' rows='1' name='msg-samples'></textarea><br>
+
+        <select name="topic" size="1">
+            <option>Choose the niche of your writing samples</option>
+            <option value="cleaning">Cleaning Services</option>
+            <option value="dental">Dentists and Dental Care</option>
+            <option value="gardening">Gardening</option>
+            <option value="marketing">Marketing</option>
+            <option value="medical">Medical</option>
+            <option value="pets">Pets</option>
+            <option value="pestcontrol">Pest Control</option>
+            <option value="realestate">Real estate</option>
+            <option value="renovations">Renovations</option>
+            <option value="seooptimization">Search Engine Optimization</option>
+            <option value="travel">Travel</option>
+            <option value="weightloss">Weight Loss</option>
+            <option value="wordpress">WordPress</option>            
+        </select><br>
+        
+        Does a job require WordPress skills?(Yes/No)?<br>
+        <textarea cols='50' rows='1' name='msg-wp'></textarea><br>
+        
+        Does a job require SEO skills(Yes/No)?<br>
+        <textarea cols='50' rows='1' name='msg-seo'></textarea><br>
+
+        What is the type of a job(Hourly/Fixed/Budget)?<br>
+        <textarea cols='50' rows='1' name='msg-type'></textarea><br>
+        
+        <input type='submit' value='submit'>
+    </form>
+</body>
