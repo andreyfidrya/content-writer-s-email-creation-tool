@@ -83,4 +83,8 @@ $pets = "<p>https://ozshepherd.com.au/articles/dogs/tips/training-your-australia
 <p>https://minigolden.us/articles/dogs/9-must-know-facts-about-the-mini-goldendoodle/
 <p>https://minigolden.us/articles/dogs/fun-facts-about-the-mini-goldendoodle/";
 
+$sport = "<p>https://www.pakmen.com/the-history-of-volleyball/ 
+<p>https://www.pakmen.com/the-difference-between-beach-and-indoor-volleyball/
+<p>https://precisionstriking.com/beginner-boxing-tips/";
+
 ?>

@@ -41,6 +41,9 @@ if ($strsamples == 'Yes'){
     }
     if ($_POST['topic']=='pets'){
         echo $pets;
+    }
+    if ($_POST['topic']=='sport'){
+        echo $sport;
     }  
 }
 
