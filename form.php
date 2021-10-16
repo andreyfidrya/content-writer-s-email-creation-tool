@@ -17,10 +17,10 @@ Thanks.
 Andrey.";
 
 
-$strsamples = ($_POST['msg-samples']);
-$strwp = ($_POST['msg-wp']);
-$strseo = ($_POST['msg-seo']);
-$strtype = ($_POST['msg-type']);
+$strsamples = htmlspecialchars($_POST['msg-samples']);
+$strwp = htmlspecialchars($_POST['msg-wp']);
+$strseo = htmlspecialchars($_POST['msg-seo']);
+$strtype = htmlspecialchars($_POST['msg-type']);
 
 
 require "errors.php"; # - виды ошибок, проверка на ошибки

@@ -94,4 +94,7 @@ $ppc = "<p>https://ariacal.com/ppc-blog/how-effective-is-ppc-advertising/
 <p>https://ariacal.com/ppc-blog/how-to-get-more-sales-with-ppc/
 <p>https://ariacal.com/ppc-blog/is-ppc-marketing-worth-it/";
 
+$aquariums = "<p>https://www.aquariumbros.com/freshwater-aquarium-fish/most-exotic-freshwater-aquarium-fish/ 
+<p>https://www.aquariumbros.com/types-of-aquarium-plants/";
+
 ?>

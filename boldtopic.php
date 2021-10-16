@@ -64,4 +64,7 @@ if ($_POST['topic']=='sport'){
 if ($_POST['topic']=='ppc'){
     $samples = "<p>I have experience in writing content about <strong>Pay per Click advertising</strong>. Here are some of my writing samples:";
 }
+if ($_POST['topic']=='aquariums'){
+    $samples = "<p>I have experience in writing content about <strong>aquariums and fish keeping</strong>. Here are some of my writing samples:";
+}
 ?>

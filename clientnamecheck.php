@@ -1,6 +1,7 @@
 <?php 
 
-$client = ($_POST['msg-client']);
+$client = htmlspecialchars($_POST['msg-client']);
+
 if ($client =='No') {
 
     $intro = "Hello,

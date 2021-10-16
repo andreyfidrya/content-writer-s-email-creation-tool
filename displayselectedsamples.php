@@ -48,6 +48,9 @@ if ($strsamples == 'Yes'){
     if ($_POST['topic']=='ppc'){
         echo $ppc;
     } 
+    if ($_POST['topic']=='aquariums'){
+        echo $aquariums;
+    }
 }
 
 
