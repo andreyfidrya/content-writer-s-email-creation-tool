@@ -5,7 +5,15 @@ require "clientnamecheck.php"; #Проверка поля имени клиен�
 require_once "constantblocks.php"; #Неизменные блоки текста письма 
 
 // Подставляем жирным цветом название тематики
-require "boldtopic.php";
+
+//require "boldtopic.php";
+/*echo '<pre>';
+print_r($_POST);
+echo '</pre>';*/
+
+/*echo '<pre>';
+print_r($_POST['topic']); 
+echo '</pre>';*/
 
 //Вносим samples, создаем переменные
 require_once "samples.php";
@@ -21,6 +29,7 @@ $strsamples = htmlspecialchars($_POST['msg-samples']);
 $strwp = htmlspecialchars($_POST['msg-wp']);
 $strseo = htmlspecialchars($_POST['msg-seo']);
 $strtype = htmlspecialchars($_POST['msg-type']);
+
 
 
 require "errors.php"; # - виды ошибок, проверка на ошибки
@@ -40,7 +49,8 @@ require "displayselectedsamples.php";
 
 require "displayselectedblocks.php"; #Выводим выбранные поля WordPress, SEO и вид работы Hourly, Fixed или Budget
  
-echo $bottomline;
+echo $bottomline."<br>";
+//echo "Выбранно <strong>$l</strong> полей";
 }
 
 ?>
