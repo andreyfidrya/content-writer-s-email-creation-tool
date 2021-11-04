@@ -1,20 +1,20 @@
 <?php 
 
-if ($strwp == 'Yes'){
+if ($strwp == 'yes'){
     echo $wp."<br>";
 }
 
-if ($strseo == 'Yes'){
+if ($strseo == 'yes'){
         echo $seo."<br>";
 }
 
-if ($strtype == 'Hourly'){
+if ($strtype == 'hourly'){
     echo $hourly."<br>";
 }
-if ($strtype == 'Fixed'){
+if ($strtype == 'fixed'){
     echo $fixed."<br>";
 } 
-if ($strtype == 'Budget'){
+if ($strtype == 'budget'){
     echo $budget."<br>";
 }
 

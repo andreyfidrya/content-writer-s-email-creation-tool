@@ -25,10 +25,10 @@ Thanks.
 Andrey.";
 
 
-$strsamples = htmlspecialchars($_POST['msg-samples']);
-$strwp = htmlspecialchars($_POST['msg-wp']);
-$strseo = htmlspecialchars($_POST['msg-seo']);
-$strtype = htmlspecialchars($_POST['msg-type']);
+$strsamples = ($_POST['samples']);
+$strwp = ($_POST['wordpress']);
+$strseo = ($_POST['seo']);
+$strtype = ($_POST['jobtype']);
 
 
 
@@ -52,5 +52,9 @@ require "displayselectedblocks.php"; #Выводим выбранные поля
 echo $bottomline."<br>";
 //echo "Выбранно <strong>$l</strong> полей";
 }
-
+/*
+echo '<pre>';
+print_r($_POST);
+echo '<pre>';
+*/
 ?>
