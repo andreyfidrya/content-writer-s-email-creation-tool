@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <head>
     <title>Email Creation Tool for Content Writers</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset='utf-8'>
 </head>
 <body>
     <form action='form.php' method='post'>
         
-        <h2>Do you know client's name?(Yes/No)?</h2><br>
+        <h2>Do you know client's name?(Yes/No)?</h2>
         <input type="radio" name="clientname" value="yes">Yes<br>
         <input type="radio" name="clientname" value="no">No<br>
         <h3>If Yes, what's client name?</h3>
         <textarea cols='50' rows='1' name='msg-client'></textarea><br>
 
-        <h2>Do you have writing samples?(Yes/No)?</h2><br>
+        <h2>Do you have writing samples?(Yes/No)?</h2>
         <input type="radio" name="samples" value="yes">Yes<br>
         <input type="radio" name="samples" value="no">No<br>
         <h1>Choose the niche (or several niches) of your writing samples</h1><br>
@@ -35,14 +36,14 @@
             <option value="wordpress">WordPress</option>            
         </select><br>
         
-        <h2>Does a job require WordPress skills?(Yes/No)?</h2><br>
+        <h2>Does a job require WordPress skills?(Yes/No)?</h2>
         <input type="radio" name="wordpress" value="yes">Yes<br>
         <input type="radio" name="wordpress" value="no">No<br>
-        <h2>Does a job require SEO skills(Yes/No)?</h2><br>
+        <h2>Does a job require SEO skills(Yes/No)?</h2>
         <input type="radio" name="seo" value="yes">Yes<br>
         <input type="radio" name="seo" value="no">No<br>
 
-        <h2>What is the type of a job(Hourly/Fixed/Budget)?</h2><br>
+        <h2>What is the type of a job(Hourly/Fixed/Budget)?</h2>
         <input type="radio" name="jobtype" value="hourly">Hourly<br>
         <input type="radio" name="jobtype" value="fixed">Fixed<br>
         <input type="radio" name="jobtype" value="budget">Budget<br>
