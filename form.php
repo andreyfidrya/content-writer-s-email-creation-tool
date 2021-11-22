@@ -1,19 +1,10 @@
 <?php
 
-require "clientnamecheck.php"; #Проверка поля имени клиента
+require_once "spamwordcheck.php"; #Проверка поля спам слова
+
+require_once "clientnamecheck.php"; #Проверка поля имени клиента
 
 require_once "constantblocks.php"; #Неизменные блоки текста письма 
-
-// Подставляем жирным цветом название тематики
-
-//require "boldtopic.php";
-/*echo '<pre>';
-print_r($_POST);
-echo '</pre>';*/
-
-/*echo '<pre>';
-print_r($_POST['topic']); 
-echo '</pre>';*/
 
 //Вносим samples, создаем переменные
 require_once "samples.php";

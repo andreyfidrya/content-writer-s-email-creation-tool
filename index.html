@@ -7,6 +7,12 @@
 <body>
     <form action='form.php' method='post'>
         
+        <h2>Does the job have spam word?(Yes/No)?</h2>
+        <input type="radio" name="spamword" value="yes">Yes<br>
+        <input type="radio" name="spamword" value="no">No<br>
+        <h3>If Yes, what's spam word?</h3>
+        <textarea cols='50' rows='1' name='msg-spamword'></textarea><br>
+
         <h2>Do you know client's name?(Yes/No)?</h2>
         <input type="radio" name="clientname" value="yes">Yes<br>
         <input type="radio" name="clientname" value="no">No<br>
@@ -48,7 +54,7 @@
         <input type="radio" name="jobtype" value="fixed">Fixed<br>
         <input type="radio" name="jobtype" value="budget">Budget<br>
 
-        <input type='submit' value='submit'>
+        <input class="button" type='submit' value='Submit'>
     </form>
     <!---<a href="http://localhost/php-crash-course-2020-master/cover_letter/content-writer-s-email-creation-tool/index.html">Previous version</a>---> 
 </body>
