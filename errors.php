@@ -3,6 +3,10 @@
 if ($_POST['clientname'] == 'yes' && empty($client)) {
     $errors[] = "Enter the client's name in the field about the client";
 }
+if ($_POST['spamword'] == 'yes' && empty($spamword)) {
+    $errors[] = "Enter the spam word in the field about spam word";
+}
+
 /*if ($strsamples != 'Yes' && $strsamples != 'No'){
     $errors[] = 'Enter either Yes or No in the field about samples';
 }*/

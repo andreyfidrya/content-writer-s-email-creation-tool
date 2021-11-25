@@ -1,5 +1,7 @@
 <?php 
 
+$notopic = htmlspecialchars($_POST['no-topic']);
+
 function GetBold($topicname){
     $topicresult = "<p>I have experience in writing content about <strong> $topicname</strong>. Here are some of my writing samples:";
     return $topicresult;
@@ -12,7 +14,7 @@ if ($strsamples == 'yes'){
         echo $samples."<br>"; 
     }
     if (!isset($_POST['topic']) and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         }
     
@@ -30,7 +32,7 @@ if ($strsamples == 'yes'){
         echo $realestatesamples; 
     }
     if ($_POST['topic'][$x]=='realestate' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $realestatesamples; 
     }      
@@ -40,7 +42,7 @@ if ($strsamples == 'yes'){
         echo $marketingsamples;
     }
     if ($_POST['topic'][$x]=='marketing' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $marketingsamples;
     }
@@ -50,7 +52,7 @@ if ($strsamples == 'yes'){
         echo $travelsamples;
     }
     if ($_POST['topic'][$x]=='travel' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $travelsamples;
     }
@@ -60,7 +62,7 @@ if ($strsamples == 'yes'){
         echo $pestcontrolsamples;
     }
     if ($_POST['topic'][$x]=='pestcontrol' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $pestcontrolsamples;
     }
@@ -70,7 +72,7 @@ if ($strsamples == 'yes'){
         echo $seosamples;
     }
     if ($_POST['topic'][$x]=='seooptimization' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $seosamples;
     }
@@ -80,7 +82,7 @@ if ($strsamples == 'yes'){
         echo $cleaningsamples;
     }
     if ($_POST['topic'][$x]=='cleaning' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $cleaningsamples;
     }
@@ -90,7 +92,7 @@ if ($strsamples == 'yes'){
         echo $dentalsamples;
     }
     if ($_POST['topic'][$x]=='dental' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $dentalsamples;
     }
@@ -100,7 +102,7 @@ if ($strsamples == 'yes'){
         echo $medical;
     }
     if ($_POST['topic'][$x]=='medical' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $medical;
     } 
@@ -110,7 +112,7 @@ if ($strsamples == 'yes'){
         echo $gardening;
     }
     if ($_POST['topic'][$x]=='gardening' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $gardening;
     }
@@ -120,7 +122,7 @@ if ($strsamples == 'yes'){
         echo $renovations;
     }
     if ($_POST['topic'][$x]=='renovations' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $renovations;
     }
@@ -130,7 +132,7 @@ if ($strsamples == 'yes'){
         echo $wordpress;
     }
     if ($_POST['topic'][$x]=='wordpress' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $wordpress;
     }
@@ -140,7 +142,7 @@ if ($strsamples == 'yes'){
         echo $weightloss;
     }
     if ($_POST['topic'][$x]=='weightloss' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $weightloss;
     }
@@ -150,7 +152,7 @@ if ($strsamples == 'yes'){
         echo $pets;
     }
     if ($_POST['topic'][$x]=='pets' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $pets;
     }
@@ -160,7 +162,7 @@ if ($strsamples == 'yes'){
         echo $sport;
     } 
     if ($_POST['topic'][$x]=='sport' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $sport;
     }
@@ -171,7 +173,7 @@ if ($strsamples == 'yes'){
         echo $ppc;
     }
     if ($_POST['topic'][$x]=='ppc' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $ppc;
     }
@@ -182,7 +184,7 @@ if ($strsamples == 'yes'){
         echo $aquariums;
     }
     if ($_POST['topic'][$x]=='aquariums' and !empty($_POST['no-topic'])){
-        $samples = GetBold($_POST['no-topic']);
+        $samples = GetBold($notopic);
         echo $samples."<br>";
         echo $aquariums;
     }
