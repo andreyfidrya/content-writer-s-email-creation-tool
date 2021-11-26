@@ -1,23 +1,32 @@
 <?php 
 
+if (empty($_POST['clientname']))
+{
+    $errors[] = "Select Yes or No in the question - Does the job have spam word?";
+} else
 if ($_POST['clientname'] == 'yes' && empty($client)) {
     $errors[] = "Enter the client's name in the field about the client";
 }
+
+if (empty($_POST['spamword']))
+{
+    $errors[] = "Select Yes or No in the question - Does the job have spam word?";
+} else
 if ($_POST['spamword'] == 'yes' && empty($spamword)) {
     $errors[] = "Enter the spam word in the field about spam word";
 }
 
-/*if ($strsamples != 'Yes' && $strsamples != 'No'){
-    $errors[] = 'Enter either Yes or No in the field about samples';
-}*/
-/*if ($strwp != 'Yes' && $strwp != 'No'){
-    $errors[] = 'Enter either Yes or No in the field about WordPress skills';
-}*/
-/*if ($strseo != 'Yes' && $strseo != 'No'){
-    $errors[] = 'Enter either Yes or No in the field about SEO skills';
-}*/
-/*if ($strtype != 'Hourly' && $strtype != 'Fixed' && $strtype != 'Budget'){
-    $errors[] = 'Enter either Hourly, Fixed or Budget in the field about a job type';
-}*/
+if (empty($_POST['samples'])){
+    $errors[] = 'Select either Yes or No in the question about samples';
+}
+if (empty($_POST['wordpress'])){
+    $errors[] = 'Select either Yes or No in the question about WordPress skills';
+}
+if (empty($_POST['seo'])){
+    $errors[] = 'Select either Yes or No in the question about SEO skills';
+}
+if (empty($_POST['jobtype'])){
+    $errors[] = 'Select either Hourly, Fixed or Budget in the question about a job type';
+}
 
 ?>

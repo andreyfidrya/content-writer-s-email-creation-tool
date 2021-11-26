@@ -16,10 +16,10 @@ Thanks.
 Andrey.";
 
 
-$strsamples = ($_POST['samples']);
-$strwp = ($_POST['wordpress']);
-$strseo = ($_POST['seo']);
-$strtype = ($_POST['jobtype']);
+//$strsamples = ($_POST['samples']);
+//$strwp = ($_POST['wordpress']);
+//$strseo = ($_POST['seo']);
+//$strtype = ($_POST['jobtype']);
 
 
 
@@ -37,7 +37,6 @@ echo $intro."<br>";
 
 //Вывод samples, если сказано, что samples есть и выбрана тематика
 require "displayselectedsamples.php"; 
-
 require "displayselectedblocks.php"; #Выводим выбранные поля WordPress, SEO и вид работы Hourly, Fixed или Budget
  
 echo $bottomline."<br>";

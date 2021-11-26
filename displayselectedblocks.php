@@ -1,20 +1,20 @@
 <?php 
 
-if ($strwp == 'yes'){
+if ($_POST['wordpress'] == 'yes'){
     echo $wp."<br>";
 }
 
-if ($strseo == 'yes'){
+if ($_POST['seo'] == 'yes'){
         echo $seo."<br>";
 }
 
-if ($strtype == 'hourly'){
+if ($_POST['jobtype'] == 'hourly'){
     echo $hourly."<br>";
 }
-if ($strtype == 'fixed'){
+if ($_POST['jobtype'] == 'fixed'){
     echo $fixed."<br>";
 } 
-if ($strtype == 'budget'){
+if ($_POST['jobtype'] == 'budget'){
     echo $budget."<br>";
 }
 
