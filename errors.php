@@ -28,5 +28,11 @@ if (empty($_POST['seo'])){
 if (empty($_POST['jobtype'])){
     $errors[] = 'Select either Hourly, Fixed or Budget in the question about a job type';
 }
+if ($_POST['jobtype'] == 'fixed' and empty($_POST['msg-price'])){
+    $errors[] = 'Specify the price for Fixed project';
+}
+if ($_POST['jobtype'] == 'budget' and empty($_POST['msg-price'])){
+    $errors[] = 'Specify the price for Budget project';
+}
 
 ?>

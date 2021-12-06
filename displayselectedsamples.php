@@ -7,7 +7,7 @@ function GetBold($topicname){
     return $topicresult;
 }
 
-if ($_POST['samples'] == 'yes'){
+if ($_POST['samples']  == 'yes'){
     
     if(!isset($_POST['topic']) and empty($_POST['no-topic'])){
         $samples = GetBold('...');
