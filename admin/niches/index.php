@@ -10,7 +10,7 @@
 <?php include "../../path.php"; ?>
 
 <div class="container">
-<?php include "../../include/sidebar-admin.php"; ?>
+<?php include "../../app/include/sidebar-admin.php"; ?>
 
 <div class="posts col-9">
             <div class="button row">
