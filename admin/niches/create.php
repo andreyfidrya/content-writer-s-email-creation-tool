@@ -1,3 +1,7 @@
+<?php  
+        include "../../path.php";
+        include "../../app/controllers/niches.php";    
+?>
 <!DOCTYPE html>
 <head>
     <title>Admin Panel</title>
@@ -6,7 +10,7 @@
     <meta charset='utf-8'>
 </head>
 <body>
-<?php include "../../path.php"; ?>
+
 
 <div class="container">
 <?php include "../../app/include/sidebar-admin.php"; ?>
@@ -19,11 +23,11 @@
         <form action="create.php" method="post">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Enter Niche Short Name</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input name="nicheshortname" type="text" class="form-control">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Enter Niche Full Name</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <input name="nichefullname" type="text" class="form-control">
             </div>
             <button name="niche-create" type="submit" class="btn btn-primary">Add a Niche</button>
         </form>

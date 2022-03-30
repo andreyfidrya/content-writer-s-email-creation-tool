@@ -1,7 +1,7 @@
 
         <div class="col-4">
             <h1>
-                Admin Panel
+            <a href="<?php echo BASE_URL;?>">Admin Panel</a>
             </h1>
         </div>
 <div class="row">

@@ -1,3 +1,7 @@
+<?php 
+      include "../../path.php";
+      include "../../app/controllers/niches.php";    
+?>
 <!DOCTYPE html>
 <head>
     <title>Admin Panel</title>
@@ -7,7 +11,6 @@
     <meta charset='utf-8'>
 </head>
 <body>
-<?php include "../../path.php"; ?>
 
 <div class="container">
 <?php include "../../app/include/sidebar-admin.php"; ?>
@@ -22,5 +25,13 @@
             <div class="col-5">Niche Full Name</div>
             <div class="col-3">Edit/Delete Niches</div>                      
         </div>
+        <?php foreach ($niches as $key => $niche): ?>
+        <div class="row post">
+            <div class="title col-4"><?=$niche['nicheshortname'];?></div>
+            <div class="title col-4"><?=$niche['nichefullname'];?></div>
+            <div class="red col-2"><a href="edit.php?id=<?=$niche['id']; ?>">edit</a></div>
+            <div class="del col-2"><a href="edit.php?del_id=<?=$niche['id']; ?>">delete</a></div>
+        </div>
+        <?php endforeach; ?>
 
 </body>

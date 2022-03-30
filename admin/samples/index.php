@@ -18,8 +18,8 @@
             </div>  
         <div class="row title-table">
             <h2>Samples Management</h2>
-            <div class="col-2">Niche</div>
-            <div class="col-7">Sample URL</div> 
+            <div class="col-3">Niche</div>
+            <div class="col-6">Sample URL</div> 
             <div class="col-3">Edit/Delete Samples</div>                       
 </div>
 
