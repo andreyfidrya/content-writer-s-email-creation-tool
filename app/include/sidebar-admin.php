@@ -1,7 +1,7 @@
 
         <div class="col-4">
             <h1>
-            <a href="<?php echo BASE_URL;?>">Admin Panel</a>
+            <a href="<?php echo BASE_URL;?>">Email Creation Tool</a>
             </h1>
         </div>
 <div class="row">

@@ -21,14 +21,12 @@
             </div>  
         <div class="row title-table">
             <h2>Niche Management</h2>
-            <div class="col-4">Niche Short Name</div>
-            <div class="col-5">Niche Full Name</div>
+            <div class="col-4">Niche</div>
             <div class="col-3">Edit/Delete Niches</div>                      
         </div>
         <?php foreach ($niches as $key => $niche): ?>
         <div class="row post">
-            <div class="title col-4"><?=$niche['nicheshortname'];?></div>
-            <div class="title col-4"><?=$niche['nichefullname'];?></div>
+            <div class="title col-4"><?=$niche['nichename'];?></div>
             <div class="red col-2"><a href="edit.php?id=<?=$niche['id']; ?>">edit</a></div>
             <div class="del col-2"><a href="edit.php?del_id=<?=$niche['id']; ?>">delete</a></div>
         </div>

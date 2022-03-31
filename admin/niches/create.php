@@ -22,12 +22,8 @@
         </div>
         <form action="create.php" method="post">
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Enter Niche Short Name</label>
-                <input name="nicheshortname" type="text" class="form-control">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Enter Niche Full Name</label>
-                <input name="nichefullname" type="text" class="form-control">
+                <label for="exampleInputEmail1" class="form-label">Enter Niche Name</label>
+                <input name="nichename" type="text" class="form-control">
             </div>
             <button name="niche-create" type="submit" class="btn btn-primary">Add a Niche</button>
         </form>

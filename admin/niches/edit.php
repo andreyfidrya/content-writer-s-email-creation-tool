@@ -24,11 +24,7 @@
         <input name="id" value="<?=$id;?>" type="hidden">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Edit Niche Short Name</label>
-                <input name="nicheshortname" value="<?=$NicheShortName;?>" type="text" class="form-control">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Edit Niche Full Name</label>
-                <input name="nichefullname" value="<?=$NicheFullName;?>" type="text" class="form-control">
+                <input name="nichename" value="<?=$nichename;?>" type="text" class="form-control">
             </div>
             <button name="niche-edit" type="submit" class="btn btn-primary">Edit a Niche</button>
         </form>
