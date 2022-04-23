@@ -1,3 +1,7 @@
+<?php 
+      include "../../path.php";
+      include "../../app/controllers/samples.php";    
+?>
 <!DOCTYPE html>
 <head>
     <title>Admin Panel</title>
@@ -7,7 +11,7 @@
     <meta charset='utf-8'>
 </head>
 <body>
-<?php include "../../path.php"; ?>
+
 
 <div class="container">
 <?php include "../../app/include/sidebar-admin.php"; ?>
@@ -18,9 +22,23 @@
             </div>  
         <div class="row title-table">
             <h2>Samples Management</h2>
-            <div class="col-3">Niche</div>
-            <div class="col-6">Sample URL</div> 
-            <div class="col-3">Edit/Delete Samples</div>                       
-</div>
-
+            <div class="col-2">Niche</div>
+            <div class="col-8">Sample URL</div> 
+            <div class="col-2">Edit/Delete</div>                       
+        </div>
+        <?php foreach ($samples as $key => $sample): ?>
+        <div class="row post">
+            <div class="title col-2"><?=$sample['nichename'];?></div>
+            <div class="title col-8"><?=$sample['sampleurl'];?></div>
+            <div class="red col-1"><a href="edit.php?id=<?=$sample['id_samples']; ?>">edit</a></div>
+            <div class="del col-1"><a href="edit.php?del_id=<?=$sample['id_samples']; ?>">delete</a></div>
+        </div>
+        <?php endforeach; ?>
+        <select name="nichename" class="form-select mb-2" aria-label="Default select example">
+                        <option selected>Select a niche:</option>
+                        <?php foreach ($niches as $key => $niche): ?>
+                            <option><?=$niche['nichename'];?></option>
+        <?php endforeach; ?>
+        </select>
+        <button name="get-samples-for-niches" type="submit" class="btn btn-primary">Get samples for a niche</button>
 </body>

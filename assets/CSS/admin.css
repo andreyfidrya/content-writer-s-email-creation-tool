@@ -42,3 +42,10 @@ margin: 2rem 0 0 0.4rem;
     border-bottom: 1px solid #d3d3d3;
     font-weight: 700;
 }
+
+.posts .err{
+    color: rgb(240, 8, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-style: italic;
+    font-size: 16px;   
+}

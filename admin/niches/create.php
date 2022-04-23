@@ -20,6 +20,9 @@
         <div class="row title-table">
             <h1>Add a Niche</h1>
         </div>
+        <div class="mb-12 col-12 col-md-12 err">
+        <p><?=$errMsgNiche?></p>
+        </div>
         <form action="create.php" method="post">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Enter Niche Name</label>

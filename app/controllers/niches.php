@@ -2,7 +2,7 @@
 
 include SITE_ROOT . "/app/database/db.php";
 
-$errMsg = [];
+$errMsgNiche = '';
 
 $nichename = '';
 
@@ -14,37 +14,45 @@ if($_SERVER['REQUEST_METHOD'] ==='POST' && isset($_POST['niche-create'])){
     
 $nichename = trim($_POST['nichename']);
 
-
-$existence = selectOne('niches',['nichename' => $nichename]);
-        if($existence['nichename'] === $nichename){
-            $errMsg = "Такая niche уже есть в базе";
-        }else{            
+if($nichename === ''){
+    $errMsgNiche = "Niche field is empty";
+}elseif (mb_strlen($nichename, 'UTF8') < 2){
+    $errMsgNiche = "Niche field has to contain at least 2 symbols";
+}else{
+    $existence = selectOne('niches',['nichename' => $nichename]);
+    if($existence['nichename'] === $nichename){
+        $errMsgNiche = "Such a niche already exists";
+    }else{            
             $niche = [
             'nichename' => $nichename               
             ];
         insert('niches', $niche);
         header('location:' . BASE_URL . 'admin/niches/index.php');
         }
+    }
 }else{
     $nichename = '';   
 }
 
-// Апдейт категории
+// Апдейт niches
 if($_SERVER['REQUEST_METHOD'] ==='GET' && isset($_GET['id'])){
     $id = $_GET['id'];
-    $niche = selectOne('niches', ['id' => $id]);  
-    $id = $niche['id'];
-    $nichename = $niche['nichename'];
+    $niche = selectOne('niches', ['id' => $id]);
+    $nichename = $niche['nichename'];     
 }
 
 if($_SERVER['REQUEST_METHOD'] ==='POST' && isset($_POST['niche-edit'])){
-    $nichename = trim($_POST['nichename']);
-    
-    
-    if($nichename === ''){
-        $errMsg = "Не все поля заполнены!";
-    }elseif (mb_strlen($nichename, 'UTF8') < 2){
-        $errMsg = "Категория должна быть более 2-х символов";
+
+$nichename = trim($_POST['nichename']);
+
+if($nichename === ''){
+    $errMsgNiche = "Niche field is empty";
+}elseif (mb_strlen($nichename, 'UTF8') < 2){
+    $errMsgNiche = "Niche field has to contain at least 2 symbols";
+}else{
+    $existence = selectOne('niches',['nichename' => $nichename]);
+    if($existence['nichename'] === $nichename){
+        $errMsgNiche = "Such a niche already exists";
     }else{
                 $niche = [
                 'nichename' => $nichename                         
@@ -54,3 +62,10 @@ if($_SERVER['REQUEST_METHOD'] ==='POST' && isset($_POST['niche-edit'])){
         header('location:' . BASE_URL . 'admin/niches/index.php');
         }
     }
+}
+//Удаление niche
+if($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['del_id'])){
+    $id = $_GET['del_id'];
+    delete('niches', $id);
+    header('location: ' . BASE_URL . 'admin/niches/index.php');
+}

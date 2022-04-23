@@ -20,6 +20,7 @@
         <div class="row title-table">
             <h1>Edit a Niche</h1>
         </div>
+        <p><?=$errMsgNiche?></p>
         <form action="edit.php" method="post">
         <input name="id" value="<?=$id;?>" type="hidden">
             <div class="mb-3">
