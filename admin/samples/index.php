@@ -26,6 +26,7 @@
             <div class="col-8">Sample URL</div> 
             <div class="col-2">Edit/Delete</div>                       
         </div>
+
         <?php foreach ($samples as $key => $sample): ?>
         <div class="row post">
             <div class="title col-2"><?=$sample['nichename'];?></div>
@@ -34,11 +35,14 @@
             <div class="del col-1"><a href="edit.php?del_id=<?=$sample['id_samples']; ?>">delete</a></div>
         </div>
         <?php endforeach; ?>
+        <form action="index.php" method="post">
         <select name="nichename" class="form-select mb-2" aria-label="Default select example">
                         <option selected>Select a niche:</option>
+                        <option>All niches</option>
                         <?php foreach ($niches as $key => $niche): ?>
                             <option><?=$niche['nichename'];?></option>
         <?php endforeach; ?>
         </select>
         <button name="get-samples-for-niches" type="submit" class="btn btn-primary">Get samples for a niche</button>
+        </form>
 </body>
