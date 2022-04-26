@@ -31,8 +31,8 @@
         <div class="row post">
             <div class="title col-2"><?=$sample['nichename'];?></div>
             <div class="title col-8"><?=$sample['sampleurl'];?></div>
-            <div class="red col-1"><a href="edit.php?id=<?=$sample['id_samples']; ?>">edit</a></div>
-            <div class="del col-1"><a href="edit.php?del_id=<?=$sample['id_samples']; ?>">delete</a></div>
+            <div class="red col-1"><a href="edit.php?id=<?=$sample['id']; ?>">edit</a></div>
+            <div class="del col-1"><a href="edit.php?del_id=<?=$sample['id']; ?>">delete</a></div>
         </div>
         <?php endforeach; ?>
         <form action="index.php" method="post">
