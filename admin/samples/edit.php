@@ -20,7 +20,10 @@
         <div class="row title-table">
             <h1>Edit a Sample</h1>
         </div>
-        
+        <div class="mb-12 col-12 col-md-12 err">
+                    <!-- Вывод массива с ошибками -->
+                    <?php include "../../app/help/errorInfo.php"; ?>
+        </div>
         <form action="edit.php" method="post">
         <input name="id" value="<?=$id;?>" type="hidden">
             <div class="mb-3">

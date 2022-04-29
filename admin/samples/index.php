@@ -19,7 +19,7 @@
 <div class="posts col-10">
             <div class="button row">
               <a href="<?php echo BASE_URL . "admin/samples/create.php";?>" class="col-2 btn btn-success">Add</a>
-            </div>  
+            </div>                          
         <div class="row title-table">
             <h2>Samples Management</h2>
             <div class="col-2">Niche</div>
