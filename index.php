@@ -7,7 +7,12 @@
 </head>
 <body>
 
-    <?php include "path.php"; ?>
+    <?php 
+    include "path.php"; 
+    include SITE_ROOT . "/app/database/db.php";
+    $niches = selectAll('niches');
+    $numberofniches = count($niches);    
+    ?>
 
     <div align="right"><a href="<?php echo BASE_URL . "admin/samples/index.php";?>">Admin Panel</a></div>
     <form action='form.php' method='post'>
@@ -28,23 +33,10 @@
         <input type="radio" name="samples" value="yes">Yes<br>
         <input type="radio" name="samples" value="no">No<br>
         <h1>Choose the niche (or several niches) of your writing samples</h1><br>
-        <select name="topic[]" multiple size="16">
-            <option value="aquariums">Aquariums and Fish Keeping</option>
-            <option value="cleaning">Cleaning Services</option>
-            <option value="dental">Dentists and Dental Care</option>
-            <option value="gardening">Gardening</option>
-            <option value="marketing">Marketing</option>
-            <option value="medical">Medical</option>
-            <option value="pets">Pets</option>
-            <option value="pestcontrol">Pest Control</option>
-            <option value="ppc">PPC</option>
-            <option value="realestate">Real estate</option>
-            <option value="renovations">Renovations</option>
-            <option value="seooptimization">Search Engine Optimization</option>
-            <option value="sport">Sport</option>
-            <option value="travel">Travel</option>
-            <option value="weightloss">Weight Loss</option>
-            <option value="wordpress">WordPress</option>            
+        <select name="topic[]" multiple size="<?=$numberofniches;?>">
+                            <?php foreach ($niches as $key => $niche): ?>
+                            <option value="<?=$niche['nichename'];?>"><?=$niche['nichename'];?></option>
+        <?php endforeach; ?>
         </select><br>
         <h3>If topic is not included or incorrect, enter the topic</h3> 
         <textarea cols='50' rows='1' name='no-topic'></textarea><br>

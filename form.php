@@ -1,13 +1,13 @@
 <?php
 
+include "path.php"; 
+include SITE_ROOT . "/app/database/db.php";
+
 require_once "spamwordcheck.php"; #Проверка поля спам слова
 
 require_once "clientnamecheck.php"; #Проверка поля имени клиента
 
 require_once "constantblocks.php"; #Неизменные блоки текста письма 
-
-//Вносим samples, создаем переменные
-require_once "samples.php";
 
 $bottomline = "<p>I am committed to the best possible customer experience and achieving 100% customer satisfaction! That’s why I do every single thing possible to make each of my customers happy! 
 <p>
